@@ -1,3 +1,252 @@
-main {
-background-image:url(./img/immg.jpg) ;
+* {
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
 }
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: green;
+}
+p {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#ADADAD;
+    padding-top:21px;
+    padding-bottom: 10px;
+}
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+}
+button {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 0px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color:#FFFFFF;
+    padding: 20px;
+    height: 36px;
+    width: 131px;
+    border-radius: 50px;
+    background-color: #EC8F32;
+    border: none; 
+}
+.Kitob {
+    background-image: url("/img/bgimg.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 712px;
+}
+nav {
+   max-width: 1500px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 126px;
+   gap:100px;
+   margin: 0 150px;
+}
+nav a {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+.parent {
+    display: flex;
+    gap: 100px;
+}
+.parent1 {
+    display: flex;
+    gap:30px;
+}
+.buttonn {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color:#FFFFFF;
+    padding: 16px,8px;
+    border-radius: 16px;
+    height: 40px;
+    width: 150px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    height: 586px;
+    gap:200px;
+    margin: 0 150px;
+}
+main > div h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 62px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+    max-width: 778px;
+}
+main > div p {
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#FFFFFF;
+    padding-top:14px;
+}
+main > div button {
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color:#FFFFFF;
+    padding: 24px;;
+    height: 79px;
+    width: 248px;
+    border-radius: 50px;
+    background-color:#EC8F32;
+    border:none;
+}
+
+/* chast */
+
+.smotret {
+    display:flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    padding-top: 104px;
+    padding-bottom: 33px;
+}
+.chast {
+    display:flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items:flex-start;
+    gap:55px;
+    margin: 0 150px;
+}
+
+/* chast */
+
+/* jena */
+.vse {
+    display:flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    padding-top: 104px;
+    padding-bottom: 33px;
+}
+.Jena {
+    display:flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items:flex-start;
+    gap:50px;
+    margin: 0 150px;
+}
+/* jena */
+
+/* redaksiya */
+.populyarniy {
+    display:flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    padding-top: 104px;
+    padding-bottom: 33px;
+}
+.redaksia {
+    display:flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items:flex-start;
+    gap:50px;
+    margin: 0 150px;
+}
+/* redaksiya */
+
+/* novinki */
+.tvoya {
+    display:flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    padding-top: 104px;
+    padding-bottom: 33px;
+}
+
+.novinki {
+    display:flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items:flex-start;
+    gap:50px;
+    margin: 0 150px;
+}
+/* novinki */
+
+/* new */
+.new {
+    display:flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items:flex-start;
+    gap:50px;
+    margin: 0 150px;
+}
+/* new */
+
+/* non */
+.non {
+    display:flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items:flex-start;
+    gap:24px;
+    margin: 0 150px;
+}
+/* non */
