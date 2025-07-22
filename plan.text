@@ -1,0 +1,93 @@
+1.let ,var,const;
+2.1.let bilan yaratilgan o'zgaruvchilarga yangi data yoki ma'lumot biriktirsak bo'ladi lekin bu o'zgaruvchilarni qayta e'lon qilib bo'lmaydi.
+2.2 hosting
+2.3 scope
+
+3.pirimitiv turlari:
+Number, String, Boolean, Null, Undefined, Symbol va BigInt;
+Non-primitive:Object;
+4.Primitiv va No-primitiv (refrence) farqi
+Dasturlashda primitiv va no-primitiv ma'lumotlar turlari, birinchi navbatda, qanday saqlanishi va solishtirilishi bilan farqlanadi. Primitiv tiplar haqiqiy qiymatni bevosita xotirada saqlaydi, primitiv bo'lmaganlar esa ma'lumotlar saqlanadigan joyga havolani (xotira manzilini) saqlaydi.
+5.Accses before intilization JavaScript  da keng tarqalgan xatolik boʻlib, u oʻzgaruvchiga qiymat tayinlanishidan oldin yoki uning deklaratsiyasi JavaScript mexanizmi tomonidan qayta ishlanishidan oldin foydalanmoqchi boʻlganingizda yuzaga keladi. Bu, odatda, let yoki const yordamida e'lon qilingan o'zgaruvchilar bilan sodir bo'ladi, chunki ular "ko'tarilgan" (ularning ko'lamining yuqori qismiga ko'chirilgan) kabi var deklaratsiyasi kabi noaniq holatga keltirilmaydi.
+6.Type conversion  haqida malumot bering
+Type conversion qiymatni bir ma'lumot turidan boshqasiga o'zgartirish jarayonini anglatadi. 
+7. Type conversion necha xil usuli bor
+2xil 1. Implicit Type Conversion 
+2.Explicit Type Conversion (Casting):
+8.Avtomatik type conversion haqida malumot bering
+Avtomatik type conversion sizga turlarni aniq ko'rsatmasdan aylantirish imkonini beradi. Belgilangan tur qabul qilinishi mumkin bo'lmasa, u avtomatik ravishda ma'lumotlar turini o'zgartiradi.
+9.Math objecti haqida malumot bering
+Math objecti matematik amallarni bajarish uchun ishlatiladi js da
+10.Truhy and falsy qiymatlarini sanab bering;
+ falsiy qiymatlar:0, "",0n,-0n,false,null,undifined,
+ falsiy qiymatga kirmagan qiymatlar truthy qiymatlardir.
+ 11.If else haqida malumo bering 5?
+ if else bu shartli operatorlardir.Shart tug'ri bulsa if notug'ri bulsa else bajariladi.
+ 12.Switch case haqida malumot bering
+ Switch operatori, shuningdek, switch case sifatida ham tanilgan, bu bitta o'zgaruvchining qiymati asosida bajarilishi uchun bir nechta kod bloklaridan birini tanlash imkonini beruvchi boshqaruv oqimi bayonotidir.
+ 13.Nechi xil asosiy functionlar bor
+ function decloration,function expression,arrow function
+ 14.Functionlarni bir biridan farqi
+ function declaration pilus taraflaridan biri bu functioni , function dan oldin ham chaqirib ishlatsak boladi .
+function expressionni bitta ozagruvchiga olib ishlatamiz , uni minuslaridan bittasi unii function dan oldin ishlatib bolmaydi , yanni functioni tepada yozishga togri keladi , function declaration da esa hohlagan joyda yozib ketish mumkin boladi .
+arrow function ham huddi function expression ga oxshab faqat functiondan keyin chaqirish mumkin.Eng yaxshi tarafi u juda qisqa yoziladi
+15.
+Functionda return ishlashi:
+return funksiyaning istalgan joyida, masalan loop to'xtaganida, funksiya to'xtaganida, if/else holatlarida ishlatiladi
+16.
+IIFE haqida malumot bering
+bu function uzini uzi chaqiradigan function hisoblanadi yani funksiya tashqarisida funksiyani chaqirmaymiz
+17.
+Method nima
+Method bu - ma'lum bir turga  bog'langan funksiya bo'lib, u o'sha turga oid amallarni bajarish uchun ishlatiladi.
+18.
+Stringni split malumot bering 
+Split string ma'lumotlarini Arrayga aylantiradi.
+19.
+Loop nima
+Loop, dasturda ma'lum bir shart bajarilguncha yoki ma'lum bir marta takrorlanishi kerak bo'lgan kod bloklarini qayta-qayta ishlatish imkonini beradi. Bu, ayniqsa, bir xil amallarni ko'p marta bajarish kerak bo'lganda juda samarali bo'ladi.
+20
+Loop turlari
+for loop: Belgilangan miqdorda takrorlanadi.
+while loop: Berilgan shart rost bo'lsa, takrorlanadi.
+do-while loop: Kamida bir marta bajariladi va shart rost bo'lsa, takrorlanadi.
+21.
+do while while loopini farqi
+do whileni whiledan farqi do while avval bajarib keyin shartni tekshiradi While teskarisi
+22.
+for in for of farqi
+for in asosan objectlar uchun for off asosan Arraylar uchun ishlatiladi
+23.
+Assigment operatorlarni sanab bering
+Assigment operatorlarni: =,+=,*=,-=,/=;
+24.
+== === farqi
+== faqat qiymatlarni tengligini tekshiradi,===qiymat va type bilan tekshiradi.
+25.
+! operatori haqida
+! bu inkor operatori tug'rini notug'riga ,notug'ri qiymatni tug'riga aylantiradi
+26.
+Array method concat 
+concat => Arraylarni qushib beradi.
+27.
+Array method reverce
+reverse=> Elementlarni teskari tartib da chiqarib beradi.
+28,
+Array method splice
+splice=> qaysidir indeksdan boshlab elementlarni yo qushadi yoki uchiradi.
+29.
+Array method foreach
+foreach => Bu array ustida yurib ,har bir element uchun berilgan functioni bajaridgan High order function
+30:
+Array foreach methodni boshqa methodalrdan farqi 
+bu method yangi array qaytarmaydi 
+31.Arrayni map methodi 
+array bilan ishlab boshqa bir arrayni return qiymatlardir
+32.
+Arrayni some methodi haqida malumot bering
+some methodi => arraydagi kamida  bitta element shartga  mos kelsa true bulmasa false qaytaradi
+33.
+Arrayni every methodi haqida malumot bering
+every => arrayning har bir elementi berilgan shartga mos kelsa true bitta ham mos kelmasa false qaytaradi
+34
+
