@@ -2,11 +2,13 @@
    margin:0;
    padding:0;
    box-sizing: border-box; 
+   margin:0 auto;
 }
 .container {
     max-width: 1500px;
     margin: 0 auto;
-    background-color: green;
+    padding: 0 150px;
+    background: linear-gradient(#000000EB,green,#000000EB)
 }
 p {
     font-family:'Times New Roman', Times, serif;
@@ -26,7 +28,7 @@ h4 {
     letter-spacing: 0%;
     color:#ADADAD;
     padding-top:21px;
-    padding-bottom: 10px;
+
 }
 h3 {
     font-family: 'Times New Roman', Times, serif;
@@ -55,8 +57,7 @@ button {
     border: none; 
 }
 .Kitob {
-    background-image: url("/img/bgimg.jpg");
-    background-size: auto;
+    background-image: url("/img/shutter.png");
     background-repeat: no-repeat;
     height: 712px;
 }
@@ -67,7 +68,7 @@ nav {
    align-items: center;
    height: 126px;
    gap:100px;
-   margin: 0 150px;
+   backdrop-filter: blur(10px);
 }
 nav a {
     font-family: 'Times New Roman', Times, serif;
@@ -114,7 +115,7 @@ main {
     flex-direction:row;
     height: 586px;
     gap:200px;
-    margin: 0 150px;
+    margin: 0 auto;
 }
 main > div h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -127,17 +128,19 @@ main > div h1 {
     max-width: 778px;
 }
 main > div p {
-    font-family: Ubuntu;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     font-style: Medium;
     font-size: 24px;
     line-height: 100%;
     letter-spacing: 0%;
     color:#FFFFFF;
+    flex: wrap;
     padding-top:14px;
+    max-width: 547px;
 }
 main > div button {
-    font-family: Ubuntu;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 24px;
@@ -159,17 +162,20 @@ main > div button {
 .smotret {
     display:flex;
     justify-content: space-between;
-    margin: 0 150px;
     padding-top: 104px;
     padding-bottom: 33px;
 }
-.chast {
+#chast {
     display:flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items:flex-start;
-    gap:55px;
-    margin: 0 150px;
+    gap:50px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+#chast::-webkit-scrollbar{
+    display: none;
 }
 
 /* chast */
@@ -178,17 +184,20 @@ main > div button {
 .vse {
     display:flex;
     justify-content: space-between;
-    margin: 0 150px;
     padding-top: 104px;
     padding-bottom: 33px;
 }
 .Jena {
     display:flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items:flex-start;
     gap:50px;
-    margin: 0 150px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+.Jena::-webkit-scrollbar{
+    display:none;
 }
 /* jena */
 
@@ -196,57 +205,224 @@ main > div button {
 .populyarniy {
     display:flex;
     justify-content: space-between;
-    margin: 0 150px;
     padding-top: 104px;
     padding-bottom: 33px;
 }
 .redaksia {
     display:flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items:flex-start;
     gap:50px;
-    margin: 0 150px;
+    padding-bottom: 60px;
+    overflow-x: auto;
 }
+.redaksia::-webkit-scrollbar{
+    display:none;
+}
+
 /* redaksiya */
 
 /* novinki */
 .tvoya {
     display:flex;
     justify-content: space-between;
-    margin: 0 150px;
     padding-top: 104px;
     padding-bottom: 33px;
 }
 
 .novinki {
     display:flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items:flex-start;
     gap:50px;
-    margin: 0 150px;
+    padding-bottom: 60px;
+    overflow-x: auto;
 }
+.novinki::-webkit-scrollbar{
+    display:none;
+}
+
 /* novinki */
 
 /* new */
 .new {
     display:flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items:flex-start;
     gap:50px;
-    margin: 0 150px;
+    padding-bottom: 120px;
+    overflow-x: auto;
+}
+.new::-webkit-scrollbar{
+    display:none;
 }
 /* new */
 
 /* non */
+.podvorki {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 104px;
+    padding-bottom: 33px;
+}
 .non {
     display:flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items:flex-start;
     gap:24px;
-    margin: 0 150px;
+    padding-bottom: 196px;
+    overflow-x: auto;
+}
+.non::-webkit-scrollbar{
+    display:none;
 }
 /* non */
+
+/* knig */
+.knig {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    gap:35px;
+    padding-bottom: 30px;
+
+}
+/* kinig */
+.sammari {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2.5px solid #FFFFFF4D;
+    border-radius: 25px;
+    padding: 60px;
+    gap:35px;
+}
+
+.rukoy  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    gap:35px;
+    padding-bottom: 30px;
+
+}
+/* vsegda */
+.vsegda {
+    display: flex;
+    flex: wrap;
+    gap: 88px;
+    padding-top: 165px;
+    padding-bottom: 159px;
+}
+/* vsegda */
+
+.amazon {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.netflix p {
+    max-width: 534px;
+}
+.avo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;;
+    border: 3px solid #FFFFFF4D;
+    border-radius: 25px;
+    padding: 57px 58px 38px 46px;
+}
+
+.footer {
+  color: #ccc;
+  padding: 162px 0 48px;
+  font-family: sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  border-bottom: 1px solid #333;
+  padding-bottom: 145px;
+  gap: 162px;
+  flex-wrap: wrap;
+}
+.foot {
+    display:flex;
+    gap:162px;
+    flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  color: #666;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-links h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-bottom-links a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-payment img {
+  width: 40px;
+  margin-left: 10px;
+  opacity: 0.7;
+}
+
+
